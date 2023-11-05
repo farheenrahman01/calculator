@@ -12,7 +12,7 @@
         <input type = "text" name="screen" id="screen">
         <table>
             <tr>
-                <td><button onclick="myFunction('1')" class="1">1</button></td>
+                <td><button onclick= myFunction("1") class="1">1</button></td>
                 <td><button onclick="myFunction('2')" class="2">2</button></td>
                 <td><button onclick="myFunction('3')" class="3">3</button></td>
                 <td><button onclick="myFunction('+')" class="+">+</button></td>
@@ -39,7 +39,17 @@
         
         </table>
     </div>
+    <script> 
+    function myFunction(i) {
+var text=document.getElementsByClassName(i)[0].textContent
+console.log(text)
+var inputtext=document.getElementById("screen").value
+console.log(inputtext)
+inputtext+=text
+document.getElementById("screen").value=inputtext
+console.log(inputtext)
+}
+    </script>
 
-    <script src="script.js"></script>
 </body>
 </html>
