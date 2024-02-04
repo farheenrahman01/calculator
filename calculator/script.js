@@ -7,3 +7,4 @@ inputtext+=text
 document.getElementById("screen").textContent=inputtext
 console.log(inputtext)
 }
+console.log("hi")
